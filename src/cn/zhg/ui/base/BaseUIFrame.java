@@ -137,7 +137,7 @@ public class BaseUIFrame extends JFrame
 	public void error(String msg, Throwable ex)
 	{
 		ExpandDialog dia = new ExpandDialog(this, JOptionPane.ERROR_MESSAGE);
-		dia.setMessage("程序不能正常运行,错误如下:");
+		dia.setMessage(msg);
 		if (ex != null)
 		{
 			StringWriter sw = new StringWriter();
